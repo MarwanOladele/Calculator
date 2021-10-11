@@ -15,7 +15,7 @@ buttons.map((button) => {
         display.innerText = display.innerText.slice(0, -4);
       } else if (e.target.innerText == "=") {
         display.innerText = display.innerText.slice(0, -1);
-        display.innerText = eval(display.innerText);
+        display.innerText = eval(display.innerText).toFixed(3);
       }
     } catch (error) {
       display.innerText = "Syn Error";
