@@ -6,7 +6,7 @@ buttons.map((button) => {
   button.addEventListener("click", function (e) {
     display.innerText += e.target.innerText;
     try {
-      if (display.innerText.length > 14) {
+      if (display.innerText.length > 12) {
         alert("Maximum Input");
         display.innerText = "";
       } else if (e.target.innerText == "AC") {
@@ -18,7 +18,7 @@ buttons.map((button) => {
         display.innerText = eval(display.innerText);
       }
     } catch (error) {
-      display.innerText = "Syntax Error";
+      display.innerText = "Syn Error";
     }
   });
 });
